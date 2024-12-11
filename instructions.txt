@@ -1,0 +1,33 @@
+Instructions to Deploy:
+
+project_folder/
+│
+├── app.py                   
+├── inference.py    
+├── detection_all_images.py  
+├── instructions.txt       
+├── requirements.txt         
+├── static/                  
+│   ├── images/                            
+│
+├── templates/             
+│   ├── index.html
+
+
+
+
+1) Install Required Libraries: pip install -r requirements.txt
+
+2) Open terminal in the project folder and run the flask application: python app.py 
+
+3) Access the Web Application:
+http://127.0.0.1:5000
+
+4) Using the Web Interface:
+Upload an Image: Click the Upload an Image button to select and upload an image for prediction.
+
+Bounding Box Detection: Once the image is uploaded, the model will detect and visualize bounding boxes around objects in the image.
+
+Predictions in JSON: After the detection, click the Get Predictions button to receive the predictions in JSON format.
+
+5) You can also run 'python detection_all_images.py' to get JSON predictions of all the given 'sample_images' which is saved in 'predictions_output_batch'.

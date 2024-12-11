@@ -1,0 +1,5 @@
+flask
+roboflow
+numpy
+pillow
+opencv-python
